@@ -16,3 +16,10 @@
 - Added Home to the fixed bottom navigation.
 - Default route now opens Home when no hash is present.
 - Added hash-change handling and invalid-route fallback to Home.
+
+
+## v1.3
+- Integrated formal PDF/Word itinerary and flight details.
+- Added airport meeting point and contact information.
+- Added verified LINE URL handling.
+- Marked Excel room/seat data as pending because the raw Excel was not included in the uploaded ZIP.

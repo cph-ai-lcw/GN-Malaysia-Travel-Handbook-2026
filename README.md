@@ -1,4 +1,4 @@
-# GN Malaysia Travel Handbook 2026 — v1.1
+# GN Malaysia Travel Handbook 2026 — v1.3
 
 國能馬來西亞旅遊 2026 單一 HTML 行動旅遊手帳。
 
@@ -38,3 +38,7 @@
 - Open `#/home` for the main menu.
 - Use the top-left Home button or bottom Home tab to return from any module.
 - Only Traditional Chinese and Vietnamese language modes are available.
+
+
+## v1.3 Formal Data Integration
+The official itinerary, flight times, airport meeting point, hotel and emergency contact details are integrated. The official Excel room/seat file and LINE invitation URL still require direct upload/provision.
