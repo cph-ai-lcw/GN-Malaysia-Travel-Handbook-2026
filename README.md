@@ -33,3 +33,8 @@
 - 完整 Day 1–Day 5 行程
 - 正式飯店、房間及機位名單
 - 領隊與公司聯絡資料
+
+## v1.2 Navigation Update
+- Open `#/home` for the main menu.
+- Use the top-left Home button or bottom Home tab to return from any module.
+- Only Traditional Chinese and Vietnamese language modes are available.
