@@ -1,4 +1,4 @@
-# GN Malaysia Travel Handbook 2026
+# GN Malaysia Travel Handbook 2026 — v1.1
 
 國能馬來西亞旅遊 2026 單一 HTML 行動旅遊手帳。
 
@@ -16,11 +16,18 @@
 - Wallet 記帳與匯率換算
 - Checklist 勾選保存
 - FAQ、INFO、房間與機位頁面
-- 中文、越南文、中越並列三種模式
+- 繁體中文、越南文兩種獨立顯示模式
 - LocalStorage 保存語言、清單、匯率與記帳資料
+- 舊版「中越並列」設定會自動轉為繁體中文
 - Mobile First、Glassmorphism、24px 圓角、大字體與大型觸控區
 
-## 待置換正式資料
+## 線上版核對結果
+
+- GitHub Pages 已發布 v1.0 核心架構與 12 個功能模組。
+- 線上版與本次附檔架構一致。
+- 本版 v1.1 已移除「中越並列」，僅保留繁體中文與越南文。
+
+## 下一階段待匯入正式資料
 
 - LINE 群組正式連結
 - 完整 Day 1–Day 5 行程
