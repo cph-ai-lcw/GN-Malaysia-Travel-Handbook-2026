@@ -1,0 +1,1 @@
+@media(max-width:560px){body{font-size:17px}.grid.two,.seat-grid,.hotel-grid{grid-template-columns:1fr}.hero-card{min-height:330px;padding:22px}.hero-actions a{font-size:.82rem;flex-direction:column;gap:0}.quick-card{min-height:122px}.timeline-item{grid-template-columns:64px 1fr}}@media(min-width:720px){.quick-grid{grid-template-columns:repeat(4,1fr)}}

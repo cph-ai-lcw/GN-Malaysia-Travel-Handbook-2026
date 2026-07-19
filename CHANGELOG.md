@@ -1,12 +1,7 @@
 # Changelog
 
-## v2.0 Production
-- Rebuilt as a single-file mobile travel handbook
-- Reduced navigation to 8 essential functions
-- Replaced PLAN with official PDF itinerary
-- Integrated public room and seat lookup from official Excel
-- Added Traditional Chinese / Vietnamese modes only
-- Added inline LINE QR Code and direct group link
-- Added persistent checklist and wallet with LocalStorage
-- Added high-contrast, large-font Glassmorphism UI
-- Removed passport, ID, birthday, ticket number and booking-code data
+## v3.0.0 Core
+- 移除 Firebase、領隊後台、QR 報到、點名、相簿、地圖與重複舊版程式。
+- 將 HTML、CSS、JavaScript 與旅遊資料拆成模組。
+- 建立輕量 SPA、雙語切換、PWA 離線快取。
+- 保留 32 位團員、房間分配、機位、行程、美食購物、Checklist 與 Wallet。

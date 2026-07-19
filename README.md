@@ -1,26 +1,18 @@
-# GN Malaysia Travel Handbook 2026 — v2.0 Production
+# 國能馬來西亞員旅手帳 2026 — v3.0 Core
 
-單一 HTML、可直接部署至 GitHub Pages。
+可直接部署至 GitHub Pages 的靜態 PWA。
 
-## 正式版功能
-1. 首頁
-2. PLAN
-3. ROOM
-4. SEAT
-5. CHECKLIST
-6. WALLET
-7. 美食・購物
-8. INFO
+## 功能
+- Day 1–Day 5 行程
+- 32 位團員姓名搜尋與下拉選單
+- 去／回程機位、Lexis 與 Sunway 房間分配、同房者
+- 中／越／中越並列模式
+- 打包清單與 Wallet 記帳（LocalStorage）
+- 亞羅街與 Sunway 美食購物
+- 離線 PWA
 
-## 資料來源
-- PLAN：正式旅行社 PDF
-- ROOM／SEAT：最新版 Excel
-- LINE：正式 LINE 群組 QR Code
-- 敏感資料未放入網站：身分證、護照、生日、票號、訂位代號
+## GitHub Pages
+將此資料夾內容放入 Repository 根目錄，Commit 後 Push。Pages Source 使用 `main` / root。
 
-## 部署
-將 `index.html` 覆蓋 GitHub Repository 根目錄後 Commit、Push。
-
-## 離線說明
-本版本所有程式、資料與圖片均內嵌在單一 HTML，已載入的頁面不依賴外部資源。
-受限於單一檔案規格，未另外配置 Service Worker；完整的瀏覽器安裝型離線 PWA 需額外的 `sw.js`。
+## 隱私
+介面不顯示護照、生日、身分證、訂位代碼或票號。
