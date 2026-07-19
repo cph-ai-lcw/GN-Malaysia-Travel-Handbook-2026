@@ -3,11 +3,13 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<meta name="theme-color" content="#176B5B">
+<meta name="theme-color" content="#0E5F52">
+<link rel="manifest" href="./manifest.webmanifest">
+<link rel="apple-touch-icon" href="./icons/apple-touch-icon.png">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="國能馬來西亞手帳">
-<title>國能馬來西亞旅遊手帳 2026</title>
+<title>國能馬來西亞旅遊手帳 2026｜v2.1 M1</title>
 <style>
 :root{
  --bg:#F6F2E9;--ink:#173B35;--muted:#425C56;--green:#176B5B;--mint:#58A99A;
@@ -131,6 +133,47 @@ body.lang-vi span.vi,body.lang-vi small.vi,body.lang-vi b.vi{display:inline}
  .wallet-form input:first-child{grid-column:auto}.top-actions .lang-btn{padding:0 10px;min-width:48px}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important}}
+
+/* ===== v2.1 Milestone 1 · App Framework ===== */
+:root{
+ --bg:#F5F1E8;--ink:#123C35;--muted:#55706A;--green:#0E5F52;--mint:#51A897;
+ --orange:#D0633E;--yellow:#F4D37D;--white:rgba(255,255,255,.82);--line:rgba(18,60,53,.12);
+ --shadow:0 18px 46px rgba(12,63,53,.13),0 2px 8px rgba(12,63,53,.06);
+ --shadow-press:0 8px 20px rgba(12,63,53,.14);--radius:26px;
+}
+html{background:var(--bg)}
+body{min-height:100dvh;padding-bottom:118px;background:
+ radial-gradient(circle at 8% -5%,rgba(244,211,125,.52),transparent 29%),
+ radial-gradient(circle at 105% 18%,rgba(81,168,151,.24),transparent 33%),
+ linear-gradient(180deg,#F8F5EE 0%,#F3EFE6 100%);letter-spacing:.005em}
+.shell{max-width:980px;padding:12px 14px 40px}
+.topbar{top:max(8px,env(safe-area-inset-top));z-index:40;margin:0 0 14px;padding:9px 10px 9px 15px;
+ background:rgba(255,255,255,.68);border-color:rgba(255,255,255,.86);border-radius:22px;box-shadow:0 10px 28px rgba(13,72,61,.09)}
+.brand{display:flex;align-items:center;gap:9px;font-size:17px}.brand:after{content:"v2.1 M1";font-size:11px;line-height:1;padding:7px 9px;border-radius:999px;background:rgba(14,95,82,.1);color:var(--green);font-weight:1000}
+.lang-btn{min-height:50px;border-radius:16px;box-shadow:none;background:rgba(255,255,255,.85)}
+.hero{min-height:460px;border-radius:34px;box-shadow:0 25px 60px rgba(10,70,64,.2);transform:translateZ(0)}
+.hero:after{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;background:linear-gradient(135deg,rgba(255,255,255,.13),transparent 42%)}
+.hero-copy{bottom:116px}.hero-copy h1{max-width:720px;letter-spacing:-.025em}.countdown{box-shadow:inset 0 1px 0 rgba(255,255,255,.3)}
+.hero-tabs{right:18px;bottom:18px;padding:8px;gap:7px;background:rgba(255,255,255,.2);border-color:rgba(255,255,255,.55);box-shadow:0 14px 30px rgba(0,0,0,.13)}
+.hero-tab{transition:transform .18s ease,background .18s ease}.hero-tab:active{transform:scale(.92)}
+.page{animation:pageIn .32s cubic-bezier(.2,.8,.2,1)}
+@keyframes pageIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.page-head{margin:6px 3px 18px}.page-head h2{letter-spacing:-.025em}
+.card{border-color:rgba(255,255,255,.82);box-shadow:var(--shadow);transition:transform .2s ease,box-shadow .2s ease;background:linear-gradient(145deg,rgba(255,255,255,.88),rgba(255,255,255,.69))}
+.quick-card{min-height:164px;padding:22px;position:relative;overflow:hidden}.quick-card:after{content:"→";position:absolute;right:20px;bottom:17px;color:var(--green);font-size:24px;font-weight:1000;opacity:.55}
+.quick-card:hover{transform:translateY(-3px)}.quick-card:active{transform:scale(.98);box-shadow:var(--shadow-press)}
+.quick-icon{width:58px;height:58px;display:grid;place-items:center;border-radius:19px;background:rgba(14,95,82,.09);font-size:31px}.quick-card b{font-size:23px;letter-spacing:-.015em}
+.primary,.filter,.icon-btn,.lang-btn{transition:transform .16s ease,filter .16s ease}.primary:active,.filter:active,.icon-btn:active,.lang-btn:active{transform:scale(.96)}
+.bottom-nav{bottom:max(10px,env(safe-area-inset-bottom));width:min(calc(100% - 20px),560px);padding:8px 10px;justify-content:space-around;overflow:visible;border-radius:28px;background:rgba(255,255,255,.78);box-shadow:0 18px 46px rgba(12,63,53,.25)}
+.nav-btn{flex:1;min-width:0;min-height:68px;border-radius:20px}.nav-btn span{font-size:25px}.nav-btn.active{box-shadow:0 8px 18px rgba(14,95,82,.25)}
+.more-sheet{position:fixed;inset:0;z-index:80;display:none;align-items:flex-end;background:rgba(8,35,31,.36);backdrop-filter:blur(6px);padding:16px}
+.more-sheet.open{display:flex;animation:fadeIn .2s ease}.more-panel{width:min(100%,560px);margin:0 auto;padding:14px;border-radius:30px;background:rgba(250,248,243,.94);box-shadow:0 30px 80px rgba(0,0,0,.28);animation:sheetUp .28s cubic-bezier(.2,.8,.2,1)}
+.more-handle{width:52px;height:5px;border-radius:99px;background:rgba(18,60,53,.22);margin:2px auto 14px}.more-title{padding:0 8px 12px;font-size:24px;font-weight:1000}.more-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}.more-link{min-height:92px;border:0;border-radius:22px;background:white;color:var(--ink);font-weight:950;font-size:17px;box-shadow:0 8px 22px rgba(12,63,53,.09)}.more-link span{display:block;font-size:29px;margin-bottom:4px}
+@keyframes sheetUp{from{transform:translateY(28px);opacity:0}to{transform:none;opacity:1}}@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+.install-note{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:14px;padding:15px 17px;border-radius:20px;background:rgba(14,95,82,.09);font-weight:850}.install-note small{display:block;color:var(--muted);font-weight:700}.install-note button{min-height:48px;border:0;border-radius:15px;padding:0 15px;background:var(--green);color:white;font-weight:950}
+@media(max-width:720px){.shell{padding:8px 10px 28px}.hero{min-height:410px;border-radius:28px}.quick-card{min-height:145px}.brand:after{display:none}.more-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:390px){.nav-btn{font-size:12px}.nav-btn span{font-size:23px}.more-sheet{padding:10px}.quick-card{min-height:132px}}
+
 </style>
 </head>
 <body>
@@ -180,6 +223,7 @@ body.lang-vi span.vi,body.lang-vi small.vi,body.lang-vi b.vi{display:inline}
 </div>
 <div class="hero-tabs" id="heroTabs"></div>
 </section>
+<div class="install-note" id="installNote"><div>📲 <span class="zh">可安裝到手機桌面</span><span class="vi">Có thể cài lên màn hình chính</span><small><span class="zh">第一次連線後，可使用離線快取</span><span class="vi">Sau lần mở đầu tiên, có thể dùng bộ nhớ ngoại tuyến</span></small></div><button type="button" id="installBtn" hidden><span class="zh">安裝</span><span class="vi">Cài đặt</span></button></div>
 
 <main>
 <section class="page active" data-page="home">
@@ -290,6 +334,7 @@ body.lang-vi span.vi,body.lang-vi small.vi,body.lang-vi b.vi{display:inline}
 </section>
 </main>
 </div>
+<div class="more-sheet" id="moreSheet" aria-hidden="true"><div class="more-panel" role="dialog" aria-modal="true" aria-label="更多功能"><div class="more-handle"></div><div class="more-title"><span class="zh">更多功能</span><span class="vi">Thêm chức năng</span></div><div class="more-grid" id="moreGrid"></div></div></div>
 <nav class="bottom-nav" id="bottomNav" aria-label="主要功能"></nav>
 
 <script>
@@ -322,6 +367,15 @@ document.querySelectorAll(".lang-btn").forEach(b=>b.addEventListener("click",()=
 function navHtml(cls){
  return pages.map(p=>`<button type="button" class="${cls} ${currentPage()===p.id?"active":""}" data-go="${p.id}" aria-label="${t(p.zh,p.vi)}"><span>${p.icon}</span>${t(p.zh,p.vi)}</button>`).join("")
 }
+function dockHtml(){
+ const dock=[pages[0],pages[1],pages[2]];
+ const active=currentPage();
+ return dock.map(p=>`<button type="button" class="nav-btn ${active===p.id?"active":""}" data-go="${p.id}"><span>${p.icon}</span>${t(p.zh,p.vi)}</button>`).join("")+`<button type="button" class="nav-btn ${["seat","checklist","wallet","food","info"].includes(active)?"active":""}" id="moreBtn"><span>☰</span>${t("更多","Thêm")}</button>`;
+}
+function renderMore(){
+ const list=pages.filter(p=>["seat","checklist","wallet","food","info"].includes(p.id));
+ document.getElementById("moreGrid").innerHTML=list.map(p=>`<button class="more-link" type="button" data-go="${p.id}"><span>${p.icon}</span>${t(p.zh,p.vi)}</button>`).join("");
+}
 function currentPage(){const p=(location.hash||"#/home").replace("#/","");return pages.some(x=>x.id===p)?p:"home"}
 function bindNav(){
  document.querySelectorAll("[data-go]").forEach(b=>b.addEventListener("click",()=>{location.hash="#/"+b.dataset.go}));
@@ -330,8 +384,10 @@ function route(){
  const p=currentPage();
  document.querySelectorAll(".page").forEach(x=>x.classList.toggle("active",x.dataset.page===p));
  document.getElementById("heroTabs").innerHTML=navHtml("hero-tab");
- document.getElementById("bottomNav").innerHTML=navHtml("nav-btn");
+ document.getElementById("bottomNav").innerHTML=dockHtml();
+ renderMore();
  bindNav();
+ const moreBtn=document.getElementById("moreBtn"); if(moreBtn)moreBtn.addEventListener("click",openMore);
  window.scrollTo({top:0,behavior:"smooth"});
 }
 window.addEventListener("hashchange",route);
@@ -413,6 +469,15 @@ function updateCountdown(){
  const target=new Date("2026-09-20T07:00:00+08:00"),now=new Date(),days=Math.ceil((target-now)/86400000);
  document.getElementById("countdown").textContent=days>0?t(`距離出發還有 ${days} 天`,`Còn ${days} ngày đến khởi hành`):t("旅程進行中／已出發","Chuyến đi đang diễn ra / đã khởi hành");
 }
+function openMore(){const s=document.getElementById("moreSheet");s.classList.add("open");s.setAttribute("aria-hidden","false")}
+function closeMore(){const s=document.getElementById("moreSheet");s.classList.remove("open");s.setAttribute("aria-hidden","true")}
+document.getElementById("moreSheet").addEventListener("click",e=>{if(e.target.id==="moreSheet")closeMore()});
+document.addEventListener("click",e=>{const g=e.target.closest("#moreGrid [data-go]");if(g)closeMore()});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")closeMore()});
+let deferredPrompt=null;
+window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();deferredPrompt=e;document.getElementById("installBtn").hidden=false});
+document.getElementById("installBtn").addEventListener("click",async()=>{if(!deferredPrompt)return;deferredPrompt.prompt();await deferredPrompt.userChoice;deferredPrompt=null;document.getElementById("installBtn").hidden=true});
+if("serviceWorker" in navigator){window.addEventListener("load",()=>navigator.serviceWorker.register("./sw.js").catch(()=>{}))}
 function renderDynamic(){renderHome();renderTimeline();renderChecklist();renderWallet();renderShop();renderRoomResult();renderSeatResult();updateCountdown();route()}
 syncLang();
 </script>
