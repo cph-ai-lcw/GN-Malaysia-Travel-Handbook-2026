@@ -113,7 +113,7 @@ export const SIGHTS = Object.freeze([
         nameVi: 'Chợ đêm Jalan Alor',
         descZh: '本團唯一安排的夜市，以露天餐廳、烤雞翅、海鮮與熱帶水果聞名，請依領隊指定時間集合。',
         descVi: 'Chợ đêm duy nhất của đoàn, nổi tiếng với quán ăn ngoài trời, cánh gà nướng, hải sản và trái cây. Tập trung đúng giờ.',
-        photo: './images/sight-jalan-alor.jpg?v=3.0.7',
+        photo: './images/sight-jalan-alor.jpg?v=3.0.8',
         photoClass: 'sight-photo-portrait',
         photoAltZh: '亞羅街夜市美食與用餐區',
         photoAltVi: 'Ẩm thực và khu ăn uống tại chợ đêm Jalan Alor'

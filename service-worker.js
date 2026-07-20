@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.0.7-stable-20260720';
+const CACHE='gn-malaysia-v3.0.8-stable-20260720';
 const CORE=[
   './',
   './index.html',
@@ -54,7 +54,7 @@ const CORE=[
   './images/sight-putra-mosque.jpg?v=3.0.6',
   './images/sight-skyline-luge.jpg?v=3.0.6',
   './images/sight-mitsui-outlet.jpg?v=3.0.6',
-  './images/sight-jalan-alor.jpg?v=3.0.7',
+  './images/sight-jalan-alor.jpg?v=3.0.8',
   './fonts/noto-sans-tc-400.woff2',
   './fonts/noto-sans-tc-700.woff2',
   './fonts/noto-sans-tc-900.woff2',
