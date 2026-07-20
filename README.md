@@ -1,4 +1,4 @@
-# 國能馬來西亞員旅手帳 2026 — v3.1.2 Island Stable
+# 國能馬來西亞員旅手帳 2026 — v3.1.3 Island Stable
 
 可直接部署至 GitHub Pages 的模組化靜態 PWA，無後端、無 Firebase。
 
@@ -11,7 +11,7 @@
 - Lexis／Sunway 飯店照片與主要景點專屬照片
 - 32 位團員姓名搜尋、去回程機位、Lexis／Sunway 分房與同房者
 - 馬來西亞氣候詳細打包清單與 Type G 插頭圖
-- Wallet 記帳、RM ↔ NTD 雙向換算與分類統計
+- Wallet 記帳、RM ↔ NTD 雙向輸入、切換方向、線上參考匯率與分類統計
 - 大紅花水上／陸上／館內自費項目
 - 亞羅街、Sunway Velocity Mall、Fipper、Padini、HOOGA、Beryl’s、Oriental Kopi
 - FAQ、MDAC、領隊、旅行社、飯店與緊急電話

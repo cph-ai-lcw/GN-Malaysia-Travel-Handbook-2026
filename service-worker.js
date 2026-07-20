@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.1.2-day3-20260720';
+const CACHE='gn-malaysia-v3.1.3-wallet-20260720';
 const CORE=[
   './',
   './index.html',
