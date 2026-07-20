@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.0.2-stable-20260720';
+const CACHE='gn-malaysia-v3.0.3-stable-20260720';
 const CORE=[
   './',
   './index.html',
@@ -45,11 +45,11 @@ const CORE=[
   './images/hotel-sunway-exterior.jpg',
   './images/hotel-sunway-pool.jpg',
   './images/hotel-sunway-room.jpg',
-  './images/sight-batu-caves.jpg',
-  './images/sight-petronas-towers.jpg',
-  './images/sight-pavilion-jalan-alor.jpg',
-  './images/sight-saloma-link.jpg',
-  './images/sight-putrajaya-mitsui.jpg',
+  './images/sight-batu-caves.jpg?v=3.0.3',
+  './images/sight-petronas-towers.jpg?v=3.0.3',
+  './images/sight-pavilion-jalan-alor.jpg?v=3.0.3',
+  './images/sight-saloma-link.jpg?v=3.0.3',
+  './images/sight-putrajaya-mitsui.jpg?v=3.0.3',
   './fonts/noto-sans-tc-400.woff2',
   './fonts/noto-sans-tc-700.woff2',
   './fonts/noto-sans-tc-900.woff2',

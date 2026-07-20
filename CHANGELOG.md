@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.0.3 Stable · 2026-07-20
+
+- 修正 PDF 圖片內部編號造成的五張景點照片錯置。
+- 重新配對黑風洞、雙子星塔、Pavilion／亞羅街、莎羅馬天橋與布城／三井 Outlet。
+- 更新 PWA 快取版本與圖片網址，避免手機沿用舊照片。
+
 ## v3.0.2 Stable · 2026-07-20
 
 - 從正式行程 PDF 提取 Lexis Hibiscus 與 Sunway Velocity 飯店照片。
