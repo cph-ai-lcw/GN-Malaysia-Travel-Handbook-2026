@@ -15,6 +15,12 @@ const faqs = [
     aVi: "Công ty du lịch／công ty sẽ hỗ trợ. Hãy cung cấp thông tin theo thông báo và không nộp trùng.",
   },
   {
+    qZh: "NTD 15,000 一定要全部換成外幣現金嗎？",
+    qVi: "Có cần đổi toàn bộ 15.000 TWD sang tiền mặt ngoại tệ không?",
+    aZh: "不用。身上請至少準備 NTD 15,000 等值的可用財力，以備可能的入境抽查；可由適量現金、信用卡／金融卡及可查驗的銀行餘額搭配，不必全部換成美元或馬幣現鈔。是否查驗及接受方式依現場移民官認定。",
+    aVi: "Không cần. Nên chuẩn bị sẵn khả năng tài chính tương đương ít nhất 15.000 TWD để phòng khi bị kiểm tra nhập cảnh; có thể kết hợp tiền mặt vừa đủ, thẻ tín dụng／ATM và số dư ngân hàng có thể kiểm tra, không cần đổi toàn bộ sang USD hoặc MYR tiền mặt. Việc kiểm tra và hình thức được chấp nhận do nhân viên nhập cảnh quyết định.",
+  },
+  {
     qZh: "護照與外籍員工需準備什麼？",
     qVi: "Cần chuẩn bị hộ chiếu và giấy tờ gì?",
     aZh: "護照效期需至少自返國日起算 6 個月，建議保留 3 頁完整空白頁。外籍員工必須另攜帶 ARC／居留證。",

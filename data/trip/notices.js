@@ -1,6 +1,14 @@
 export const NOTICES = Object.freeze([
   {
     date: '2026-07-20',
+    icon: '💵',
+    titleZh: '入境備用財力至少 NTD 15,000',
+    titleVi: 'Chuẩn bị chứng minh tài chính khi nhập cảnh',
+    bodyZh: '身上請至少準備 NTD 15,000 等值的可用財力，以備入境抽查。無須全部兌換外幣或攜帶全額現鈔，可搭配適量現金、信用卡／金融卡及可查驗的銀行餘額；實際查驗與認定依現場移民官為準。',
+    bodyVi: 'Nên chuẩn bị sẵn khả năng tài chính tương đương ít nhất 15.000 TWD để phòng khi bị kiểm tra nhập cảnh. Không cần đổi toàn bộ sang ngoại tệ hoặc mang toàn bộ bằng tiền mặt; có thể kết hợp tiền mặt vừa đủ, thẻ tín dụng／ATM và số dư ngân hàng có thể kiểm tra. Việc kiểm tra do nhân viên nhập cảnh quyết định.'
+  },
+  {
+    date: '2026-07-20',
     icon: '🔌',
     titleZh: '馬來西亞使用 Type G 英規插頭',
     titleVi: 'Malaysia dùng phích cắm Type G',

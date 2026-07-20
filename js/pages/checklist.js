@@ -9,6 +9,7 @@ const groups=[
       ['ticket','電子機票、航班與集合資訊','Vé điện tử, thông tin chuyến bay và tập trung'],
       ['insurance','旅遊保險與緊急聯絡資料','Bảo hiểm du lịch và liên hệ khẩn cấp'],
       ['cards','信用卡／金融卡與適量現金','Thẻ tín dụng／ATM và tiền mặt vừa đủ'],
+      ['funds','入境備用財力至少 NTD 15,000 等值；可用適量現金、信用卡／金融卡與可查驗銀行餘額搭配，不必全換外幣','Chuẩn bị tài chính nhập cảnh tương đương ít nhất 15.000 TWD; có thể kết hợp tiền mặt vừa đủ, thẻ tín dụng／ATM và số dư ngân hàng, không cần đổi toàn bộ sang ngoại tệ'],
       ['copies','護照資料頁照片（手機加密留存）','Ảnh trang thông tin hộ chiếu (lưu bảo mật trong điện thoại)']
     ]
   },

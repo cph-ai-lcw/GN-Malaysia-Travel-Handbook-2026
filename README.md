@@ -1,4 +1,4 @@
-# 國能馬來西亞員旅手帳 2026 — v3.0.8 Stable
+# 國能馬來西亞員旅手帳 2026 — v3.0.9 Stable
 
 可直接部署至 GitHub Pages 的模組化靜態 PWA，無後端、無 Firebase。
 
@@ -14,6 +14,7 @@
 - 大紅花水上／陸上／館內自費項目
 - 亞羅街、Sunway Velocity Mall、Fipper、Padini、HOOGA、Beryl’s、Oriental Kopi
 - FAQ、MDAC、領隊、旅行社、飯店與緊急電話
+- 入境備用財力提醒：至少 NTD 15,000 等值，可由現金、卡片與可查驗銀行餘額搭配
 - 繁體中文／越南文兩種獨立模式（自動記住選擇）
 - 內建 Noto Sans TC 中越字體，離線狀態仍可正確顯示
 - LocalStorage 儲存團員、語言、清單、匯率與帳目
