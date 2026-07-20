@@ -1,10 +1,11 @@
-# 國能馬來西亞員旅手帳 2026 — v3.0.9 Stable
+# 國能馬來西亞員旅手帳 2026 — v3.1.0 Island Stable
 
 可直接部署至 GitHub Pages 的模組化靜態 PWA，無後端、無 Firebase。
 
 ## 已完成功能
 
 - Hero Banner、出發倒數與浮動快速 Icon
+- 奶油白、海洋藍、珊瑚橘與陽光黃的南洋海島明亮介面
 - 首頁今日行程、接送、最新公告與 LINE 群組
 - Day 1–Day 5 時間軸、餐食、住宿與景點深度導覽
 - Lexis／Sunway 飯店照片與主要景點專屬照片
