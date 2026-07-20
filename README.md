@@ -13,7 +13,7 @@
 - 大紅花水上／陸上／館內自費項目
 - 亞羅街、Sunway Velocity Mall、Fipper、Padini、HOOGA、Beryl’s、Oriental Kopi
 - FAQ、MDAC、領隊、旅行社、飯店與緊急電話
-- 繁體中文／越南文／中越並列三種模式
+- 繁體中文／越南文兩種獨立模式（自動記住選擇）
 - 內建 Noto Sans TC 中越字體，離線狀態仍可正確顯示
 - LocalStorage 儲存團員、語言、清單、匯率與帳目
 - PWA 離線快取與 GitHub Pages 相容相對路徑

@@ -4,8 +4,7 @@ import {bi,getLang} from '../i18n.js';
 function timelineText(item){
   const lang=getLang();
   if(lang==='vi')return item.vi||item.zh;
-  if(lang==='zh')return item.zh;
-  return `${item.zh}<span class="bilingual-vi">${item.vi||item.zh}</span>`;
+  return item.zh;
 }
 
 function dayGuides(day){
