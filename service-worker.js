@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.0.4-stable-20260720';
+const CACHE='gn-malaysia-v3.0.5-stable-20260720';
 const CORE=[
   './',
   './index.html',
