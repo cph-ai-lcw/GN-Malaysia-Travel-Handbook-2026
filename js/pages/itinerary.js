@@ -1,2 +1,21 @@
-import {ITINERARY} from '../data.js';import {bi,getLang} from '../i18n.js';
-export function itineraryPage(){return `<section class="section"><h1>${bi('Day 1–Day 5 完整行程','Lịch trình Day 1–Day 5')}</h1>${ITINERARY.map((d,i)=>`<details class="card day-card" ${i===0?'open':''}><summary>Day ${d.day}｜${bi(d.titleZh,d.titleVi)}</summary><p><span class="badge">${d.date}</span> <span class="badge">🏨 ${d.hotel}</span></p><div class="timeline">${d.items.map(x=>`<div class="timeline-item"><div class="timeline-time">${x.time}</div><div class="timeline-body">${getLang()==='vi'?(x.vi||x.zh):getLang()==='zh'?x.zh:`${x.zh}<span class="bilingual-vi">${x.vi}</span>`}</div></div>`).join('')}</div></details>`).join('')}</section>`}
+import {ITINERARY,SIGHTS} from '../data.js';
+import {bi,getLang} from '../i18n.js';
+
+function timelineText(item){
+  const lang=getLang();
+  if(lang==='vi')return item.vi||item.zh;
+  if(lang==='zh')return item.zh;
+  return `${item.zh}<span class="bilingual-vi">${item.vi||item.zh}</span>`;
+}
+
+function dayGuides(day){
+  const guides=SIGHTS.find(entry=>entry.day===day)?.items||[];
+  if(!guides.length)return '';
+  return `<details class="deep-guide"><summary>📖 ${bi('開啟深度導覽','Mở hướng dẫn chi tiết')}</summary><div class="deep-guide-list">${guides.map(item=>`<article><span>${item.icon}</span><div><h3>${bi(item.nameZh,item.nameVi)}</h3><p>${bi(item.descZh,item.descVi)}</p></div></article>`).join('')}</div></details>`;
+}
+
+export function itineraryPage(){
+  const today=new Date();
+  const todayISO=`${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,'0')}-${String(today.getDate()).padStart(2,'0')}`;
+  return `<section class="section"><p class="eyebrow">5 DAYS · 4 NIGHTS</p><h1>${bi('Day 1–Day 5 完整行程','Lịch trình Day 1–Day 5')}</h1><p class="page-intro">${bi('時間、景點、餐食、住宿與深度導覽已整合在各日卡片。','Thời gian, điểm tham quan, bữa ăn, khách sạn và hướng dẫn được gộp trong từng ngày.')}</p></section><section class="section">${ITINERARY.map((day,index)=>`<details class="card day-card" ${day.date===todayISO||(!ITINERARY.some(x=>x.date===todayISO)&&index===0)?'open':''}><summary><span><small>${day.date.slice(5).replace('-','/')}</small><b>Day ${day.day}</b></span><strong>${bi(day.titleZh,day.titleVi)}</strong><i aria-hidden="true">+</i></summary><div class="day-overview"><div><small>🏨 ${bi('住宿','Khách sạn')}</small><b>${day.hotel}</b></div><div><small>🍽️ ${bi('當日餐食','Bữa ăn')}</small><div class="meal-chips">${day.meals.map(meal=>`<span>${bi(meal.zh,meal.vi)}</span>`).join('')}</div></div></div><div class="timeline">${day.items.map(item=>`<div class="timeline-item"><div class="timeline-time">${item.time}</div><div class="timeline-body">${timelineText(item)}${item.optional?`<span class="mini-badge optional">${bi('自費','Tự phí')}</span>`:''}${item.included?`<span class="mini-badge">${bi('已安排','Đã sắp xếp')}</span>`:''}</div></div>`).join('')}</div>${dayGuides(day.day)}</details>`).join('')}</section>`;
+}

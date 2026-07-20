@@ -1,5 +1,73 @@
-const CACHE='gn-malaysia-v3-core-20260719';
-const CORE=['./','./index.html','./manifest.webmanifest','./css/variables.css','./css/base.css','./css/layout.css','./css/components.css','./css/pages.css','./css/responsive.css','./js/app.js','./js/router.js','./js/storage.js','./js/i18n.js','./js/data.js','./js/components/hero.js','./js/components/nav.js','./js/pages/home.js','./js/pages/itinerary.js','./js/pages/member.js','./js/pages/checklist.js','./js/pages/wallet.js','./js/pages/guide.js','./js/pages/info.js','./data/trip/members.js','./data/trip/rooms.js','./data/trip/seats.js','./data/trip/itinerary.js','./data/trip/foods.js','./data/trip/shopping.js','./data/trip/emergency.js','./data/trip/leader-config.js','./images/hero-malaysia-v61.svg','./icons/icon-192.png','./icons/icon-512.png'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(CORE)).then(()=>self.skipWaiting())));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;e.respondWith(caches.match(e.request).then(cached=>cached||fetch(e.request).then(r=>{if(r.ok&&new URL(e.request.url).origin===location.origin)caches.open(CACHE).then(c=>c.put(e.request,r.clone()));return r}).catch(()=>e.request.mode==='navigate'?caches.match('./index.html'):undefined)))})
+const CACHE='gn-malaysia-v3-stable-20260720';
+const CORE=[
+  './',
+  './index.html',
+  './manifest.webmanifest',
+  './css/fonts.css',
+  './css/variables.css',
+  './css/base.css',
+  './css/layout.css',
+  './css/components.css',
+  './css/pages.css',
+  './css/responsive.css',
+  './js/app.js',
+  './js/router.js',
+  './js/storage.js',
+  './js/i18n.js',
+  './js/utils.js',
+  './js/data.js',
+  './js/components/hero.js',
+  './js/components/nav.js',
+  './js/pages/home.js',
+  './js/pages/itinerary.js',
+  './js/pages/member.js',
+  './js/pages/checklist.js',
+  './js/pages/wallet.js',
+  './js/pages/guide.js',
+  './js/pages/info.js',
+  './data/trip/members.js',
+  './data/trip/rooms.js',
+  './data/trip/seats.js',
+  './data/trip/itinerary.js',
+  './data/trip/foods.js',
+  './data/trip/shopping.js',
+  './data/trip/activities.js',
+  './data/trip/notices.js',
+  './data/trip/sights.js',
+  './data/trip/emergency.js',
+  './data/trip/leader-config.js',
+  './images/hero-malaysia-v61.svg',
+  './images/line-group-qr.jpg',
+  './images/type-g-plug.jpg',
+  './fonts/noto-sans-tc-400.woff2',
+  './fonts/noto-sans-tc-700.woff2',
+  './fonts/noto-sans-tc-900.woff2',
+  './fonts/noto-sans-latin-variable.woff2',
+  './fonts/noto-sans-vietnamese-variable.woff2',
+  './icons/apple-touch-icon.png',
+  './icons/icon-192.png',
+  './icons/icon-512.png',
+  './icons/icon-maskable-512.png'
+];
+
+self.addEventListener('install',event=>event.waitUntil(
+  caches.open(CACHE).then(cache=>cache.addAll(CORE)).then(()=>self.skipWaiting())
+));
+
+self.addEventListener('activate',event=>event.waitUntil(
+  caches.keys()
+    .then(keys=>Promise.all(keys.filter(key=>key!==CACHE).map(key=>caches.delete(key))))
+    .then(()=>self.clients.claim())
+));
+
+self.addEventListener('fetch',event=>{
+  if(event.request.method!=='GET')return;
+  event.respondWith(
+    caches.match(event.request).then(cached=>cached||fetch(event.request).then(response=>{
+      if(response.ok&&new URL(event.request.url).origin===self.location.origin){
+        caches.open(CACHE).then(cache=>cache.put(event.request,response.clone()));
+      }
+      return response;
+    }).catch(()=>event.request.mode==='navigate'?caches.match('./index.html'):undefined))
+  );
+});

@@ -1,5 +1,6 @@
 {
-  "name":"國能馬來西亞員旅手帳 2026",
+  "id":"./",
+  "name":"國能馬來西亞員旅手帳 2026 · Stable",
   "short_name":"馬來西亞手帳",
   "description":"2026 國能馬來西亞員工旅遊雙語 PWA 手帳",
   "start_url":"./#/home",

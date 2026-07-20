@@ -6,3 +6,6 @@ export {FOODS} from '../data/trip/foods.js';
 export {SHOPPING} from '../data/trip/shopping.js';
 export {EMERGENCY_CONTACTS} from '../data/trip/emergency.js';
 export {LEADER_CONFIG} from '../data/trip/leader-config.js';
+export {LEXIS_ACTIVITIES} from '../data/trip/activities.js';
+export {NOTICES} from '../data/trip/notices.js';
+export {SIGHTS} from '../data/trip/sights.js';
