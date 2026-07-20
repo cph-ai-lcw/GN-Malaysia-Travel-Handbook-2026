@@ -705,6 +705,186 @@
 .mdac-card > span {
   font-size: 2rem;
 }
+
+.travel-guide-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.travel-guide-card {
+  display: grid;
+  grid-template-columns: 145px minmax(0, 1fr);
+  width: 100%;
+  min-height: 190px;
+  padding: 0;
+  overflow: hidden;
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+  cursor: zoom-in;
+}
+.travel-guide-card:hover,
+.travel-guide-card:focus-visible {
+  border-color: rgba(35, 107, 184, .38);
+  box-shadow: 0 15px 34px rgba(35, 107, 184, .18);
+}
+.travel-guide-card.important {
+  border-color: rgba(235, 112, 68, .48);
+}
+.travel-guide-thumb {
+  position: relative;
+  display: block;
+  align-self: stretch;
+  min-height: 190px;
+  overflow: hidden;
+  background: #e9f2fa;
+}
+.travel-guide-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform .25s ease;
+}
+.travel-guide-card:hover .travel-guide-thumb img {
+  transform: scale(1.025);
+}
+.travel-guide-thumb i {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 13px;
+  background: rgba(255, 255, 255, .94);
+  color: var(--primary);
+  box-shadow: 0 7px 18px rgba(30, 57, 86, .17);
+  font-style: normal;
+  font-weight: 950;
+}
+.travel-guide-copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 7px;
+  padding: 17px;
+}
+.travel-guide-copy small {
+  color: var(--primary);
+  font-size: .76rem;
+  font-weight: 950;
+  letter-spacing: .07em;
+}
+.travel-guide-copy strong {
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+.travel-guide-copy > span {
+  color: var(--muted);
+  font-size: .86rem;
+  line-height: 1.55;
+}
+.travel-guide-copy b {
+  margin-top: auto;
+  color: var(--primary);
+  font-size: .82rem;
+}
+.day-travel-guides {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+.day-travel-guides .section-head {
+  align-items: flex-end;
+  margin-bottom: 11px;
+}
+.day-travel-guides h3 {
+  margin: 0;
+}
+.mdac-guide-note {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 13px;
+  padding: 15px 17px;
+  border-color: rgba(235, 112, 68, .48);
+  background: linear-gradient(135deg, rgba(255, 255, 255, .96), rgba(255, 239, 224, .96));
+}
+.mdac-guide-note span {
+  font-size: 1.6rem;
+}
+.guide-modal-open {
+  overflow: hidden;
+}
+.travel-guide-modal {
+  position: fixed;
+  z-index: 300;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 22px;
+  background: rgba(18, 35, 52, .82);
+  backdrop-filter: blur(10px);
+}
+.travel-guide-modal[hidden] {
+  display: none;
+}
+.travel-guide-dialog {
+  display: grid;
+  grid-template-rows: auto minmax(0, 1fr) auto;
+  width: min(920px, 100%);
+  height: min(92dvh, 980px);
+  overflow: hidden;
+  border-radius: 26px;
+  background: #fff;
+  box-shadow: 0 30px 80px rgba(0, 0, 0, .38);
+}
+.travel-guide-modal-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 16px 13px 21px;
+  border-bottom: 1px solid var(--line);
+}
+.travel-guide-modal-head h2 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+.travel-guide-modal-head button {
+  display: grid;
+  place-items: center;
+  width: 48px;
+  height: 48px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 16px;
+  background: #edf4fa;
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 1;
+  cursor: pointer;
+}
+.travel-guide-image-stage {
+  overflow: auto;
+  padding: 18px;
+  background: #e7edf2;
+  overscroll-behavior: contain;
+}
+.travel-guide-image-stage img {
+  display: block;
+  width: min(100%, 760px);
+  height: auto;
+  margin: auto;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 12px 35px rgba(30, 57, 86, .18);
+}
+.travel-guide-download {
+  margin: 13px auto 16px;
+}
 .faq-list {
   display: grid;
   gap: 11px;

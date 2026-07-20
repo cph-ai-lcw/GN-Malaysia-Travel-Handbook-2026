@@ -1,5 +1,6 @@
 import { EMERGENCY_CONTACTS, LEADER_CONFIG } from "../data.js";
 import { bi } from "../i18n.js";
+import { travelGuideGrid } from "../components/travel-guide.js";
 
 const faqs = [
   {
@@ -11,8 +12,8 @@ const faqs = [
   {
     qZh: "MDAC 入境卡要自己填嗎？",
     qVi: "Tôi có tự khai MDAC không?",
-    aZh: "由旅行社／公司統一協助，請依通知提供資料，不要重複提交。",
-    aVi: "Công ty du lịch／công ty sẽ hỗ trợ. Hãy cung cấp thông tin theo thông báo và không nộp trùng.",
+    aZh: "本團 MDAC 由旅行社提供。請依旅行社與領隊通知核對資料，不需自行填寫，也不要重複提交。",
+    aVi: "MDAC của đoàn do công ty du lịch cung cấp. Hãy kiểm tra thông tin theo thông báo của công ty và trưởng đoàn; không tự khai hoặc nộp trùng.",
   },
   {
     qZh: "NTD 15,000 一定要全部換成外幣現金嗎？",
@@ -47,5 +48,31 @@ const faqs = [
 ];
 
 export function infoPage() {
-  return `<section class="section"><p class="eyebrow">INFORMATION</p><h1>${bi("更多旅遊資訊", "Thông tin du lịch")}</h1><div class="quick-grid"><a class="card quick-card" href="#/checklist"><span class="emoji">🧳</span><b>${bi("打包清單", "Hành lý")}</b></a><a class="card quick-card" href="#/wallet"><span class="emoji">💰</span><b>${bi("記帳", "Chi tiêu")}</b></a><a class="card quick-card" href="#/guide"><span class="emoji">🌺</span><b>${bi("自費・美食購物", "Tự phí · Ăn mua")}</b></a><a class="card quick-card" href="#/itinerary"><span class="emoji">📅</span><b>${bi("完整行程", "Lịch trình")}</b></a></div></section><section class="card section"><div class="icon-title"><span class="icon">🚩</span><div><p class="eyebrow">TOUR TEAM</p><h2>${bi("領隊與導遊", "Trưởng đoàn và hướng dẫn viên")}</h2></div></div><div class="staff-list"><div class="leader-row"><div><span class="badge">${bi("領隊", "Trưởng đoàn")}</span><b>${LEADER_CONFIG.name}</b><small>${bi("國能馬來西亞團領隊", "Trưởng đoàn Malaysia")}</small></div><a class="primary-btn inline-btn" href="tel:${LEADER_CONFIG.phone}">☎ ${LEADER_CONFIG.phoneDisplay}</a></div><div class="leader-row"><div><span class="badge">${bi("導遊", "Hướng dẫn viên")}</span><b>${LEADER_CONFIG.guideName}</b><small>${bi("馬來西亞當地導遊", "Hướng dẫn viên địa phương tại Malaysia")}</small></div></div></div></section><section class="card section"><h2>${bi("接送時間", "Giờ xe đưa đón")}</h2><div class="info-list"><div class="info-row"><span>9/20<small>${bi("去程", "Lượt đi")}</small></span><b>07:00 ${bi("集合", "Tập trung")}<br>07:20 ${bi("發車", "Khởi hành")}</b></div><div class="info-row"><span>9/24<small>${bi("回程", "Lượt về")}</small></span><b>23:15 ${bi("集合", "Tập trung")}<br>23:30 ${bi("發車", "Khởi hành")}</b></div></div></section><section class="card section"><h2>${bi("緊急聯絡", "Liên hệ khẩn cấp")}</h2><div class="contact-list">${EMERGENCY_CONTACTS.map((contact) => `<div class="info-row"><span>${bi(contact.nameZh, contact.nameVi)}<small>${bi(contact.noteZh, contact.noteVi)}</small></span><a class="call-btn" href="tel:${contact.phone}">☎ ${contact.phoneDisplay || contact.phone}</a></div>`).join("")}</div></section><section class="card section line-info-card"><div class="line-qr-large"><img src="${LEADER_CONFIG.lineQr}" alt="LINE 群組 QR Code" loading="lazy"></div><div><span class="badge">LINE GROUP</span><h2>${bi("員工旅遊 LINE 群組", "Nhóm LINE du lịch")}</h2><p>${bi("可用手機直接點選按鈕加入；若使用其他裝置，可開啟 LINE 掃描 QR Code。", "Bấm nút để tham gia trên điện thoại; trên thiết bị khác có thể quét mã QR bằng LINE.")}</p><a class="primary-btn" href="${LEADER_CONFIG.line}" target="_blank" rel="noopener">LINE ${bi("直接加入群組", "Tham gia nhóm ngay")}</a></div></section><section class="card section mdac-card"><span>🛂</span><div><h2>MDAC ${bi("入境提醒", "Nhắc nhập cảnh")}</h2><p>${bi("由旅行社／公司統一協助填寫。台灣護照前往馬來西亞需依入境規定準備護照、來回機票與旅遊資料；外籍員工另攜 ARC。", "Công ty du lịch／công ty hỗ trợ khai. Chuẩn bị hộ chiếu, vé khứ hồi và thông tin du lịch theo quy định nhập cảnh; nhân viên nước ngoài mang thêm ARC.")}</p></div></section><section class="section"><div class="section-head"><h2>FAQ</h2></div><div class="faq-list">${faqs.map((faq, index) => `<details class="card faq-item" ${index === 0 ? "open" : ""}><summary>${bi(faq.qZh, faq.qVi)}<i>+</i></summary><p>${bi(faq.aZh, faq.aVi)}</p></details>`).join("")}</div></section>`;
+  const contacts=EMERGENCY_CONTACTS.map((contact) => `<div class="info-row"><span>${bi(contact.nameZh, contact.nameVi)}<small>${bi(contact.noteZh, contact.noteVi)}</small></span><a class="call-btn" href="tel:${contact.phone}">☎ ${contact.phoneDisplay || contact.phone}</a></div>`).join("");
+  const faqMarkup=faqs.map((faq, index) => `<details class="card faq-item" ${index === 0 ? "open" : ""}><summary>${bi(faq.qZh, faq.qVi)}<i>+</i></summary><p>${bi(faq.aZh, faq.aVi)}</p></details>`).join("");
+  return `
+    <section class="section">
+      <p class="eyebrow">INFORMATION</p>
+      <h1>${bi("更多旅遊資訊", "Thông tin du lịch")}</h1>
+      <div class="quick-grid">
+        <a class="card quick-card" href="#/checklist"><span class="emoji">🧳</span><b>${bi("打包清單", "Hành lý")}</b></a>
+        <a class="card quick-card" href="#/wallet"><span class="emoji">💰</span><b>${bi("記帳", "Chi tiêu")}</b></a>
+        <a class="card quick-card" href="#/guide"><span class="emoji">🌺</span><b>${bi("自費・美食購物", "Tự phí · Ăn mua")}</b></a>
+        <a class="card quick-card" href="#/itinerary"><span class="emoji">📅</span><b>${bi("完整行程", "Lịch trình")}</b></a>
+      </div>
+    </section>
+    <section class="section" id="travel-process-guides">
+      <div class="section-head"><div><p class="eyebrow">TRAVEL GUIDE CARDS</p><h2>${bi("機場與行李流程圖卡", "Hình hướng dẫn sân bay và hành lý")}</h2></div><small>${bi("點擊圖片可全螢幕查看", "Bấm hình để xem toàn màn hình")}</small></div>
+      <div class="card mdac-guide-note"><span>🛂</span><b>${bi("本團 MDAC 由旅行社提供，不需自行填寫或重複提交。", "MDAC của đoàn do công ty du lịch cung cấp; không tự khai hoặc nộp trùng.")}</b></div>
+      ${travelGuideGrid(["boarding","entry","baggage","return"],{compact:true})}
+    </section>
+    <section class="card section">
+      <div class="icon-title"><span class="icon">🚩</span><div><p class="eyebrow">TOUR TEAM</p><h2>${bi("領隊與導遊", "Trưởng đoàn và hướng dẫn viên")}</h2></div></div>
+      <div class="staff-list"><div class="leader-row"><div><span class="badge">${bi("領隊", "Trưởng đoàn")}</span><b>${LEADER_CONFIG.name}</b><small>${bi("國能馬來西亞團領隊", "Trưởng đoàn Malaysia")}</small></div><a class="primary-btn inline-btn" href="tel:${LEADER_CONFIG.phone}">☎ ${LEADER_CONFIG.phoneDisplay}</a></div><div class="leader-row"><div><span class="badge">${bi("導遊", "Hướng dẫn viên")}</span><b>${LEADER_CONFIG.guideName}</b><small>${bi("馬來西亞當地導遊", "Hướng dẫn viên địa phương tại Malaysia")}</small></div></div></div>
+    </section>
+    <section class="card section"><h2>${bi("接送時間", "Giờ xe đưa đón")}</h2><div class="info-list"><div class="info-row"><span>9/20<small>${bi("去程", "Lượt đi")}</small></span><b>07:00 ${bi("集合", "Tập trung")}<br>07:20 ${bi("發車", "Khởi hành")}</b></div><div class="info-row"><span>9/24<small>${bi("回程", "Lượt về")}</small></span><b>23:15 ${bi("集合", "Tập trung")}<br>23:30 ${bi("發車", "Khởi hành")}</b></div></div></section>
+    <section class="card section"><h2>${bi("緊急聯絡", "Liên hệ khẩn cấp")}</h2><div class="contact-list">${contacts}</div></section>
+    <section class="card section line-info-card"><div class="line-qr-large"><img src="${LEADER_CONFIG.lineQr}" alt="LINE 群組 QR Code" loading="lazy"></div><div><span class="badge">LINE GROUP</span><h2>${bi("員工旅遊 LINE 群組", "Nhóm LINE du lịch")}</h2><p>${bi("可用手機直接點選按鈕加入；若使用其他裝置，可開啟 LINE 掃描 QR Code。", "Bấm nút để tham gia trên điện thoại; trên thiết bị khác có thể quét mã QR bằng LINE.")}</p><a class="primary-btn" href="${LEADER_CONFIG.line}" target="_blank" rel="noopener">LINE ${bi("直接加入群組", "Tham gia nhóm ngay")}</a></div></section>
+    <section class="card section mdac-card"><span>🛂</span><div><h2>MDAC ${bi("入境提醒", "Nhắc nhập cảnh")}</h2><p>${bi("本團 MDAC 由旅行社提供。請依旅行社與領隊通知核對資料，不需自行填寫，也不要重複提交；外籍員工另攜 ARC。", "MDAC của đoàn do công ty du lịch cung cấp. Kiểm tra thông tin theo thông báo của công ty và trưởng đoàn; không tự khai hoặc nộp trùng. Nhân viên nước ngoài mang thêm ARC.")}</p></div></section>
+    <section class="section"><div class="section-head"><h2>FAQ</h2></div><div class="faq-list">${faqMarkup}</div></section>`;
 }

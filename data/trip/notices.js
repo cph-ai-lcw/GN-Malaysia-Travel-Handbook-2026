@@ -18,10 +18,10 @@ export const NOTICES = Object.freeze([
   {
     date: '2026-07-20',
     icon: '🛂',
-    titleZh: 'MDAC 入境卡由旅行社／公司協助',
-    titleVi: 'Công ty hỗ trợ khai MDAC',
-    bodyZh: '請依通知提供資料，不要自行重複提交。',
-    bodyVi: 'Cung cấp thông tin theo thông báo, không tự nộp trùng.'
+    titleZh: '本團 MDAC 由旅行社提供',
+    titleVi: 'Công ty du lịch cung cấp MDAC cho đoàn',
+    bodyZh: '請依旅行社與領隊通知核對資料，不需自行填寫，也不要重複提交。',
+    bodyVi: 'Kiểm tra thông tin theo thông báo của công ty và trưởng đoàn; không tự khai hoặc nộp trùng.'
   },
   {
     date: '2026-07-20',

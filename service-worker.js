@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.1.3-wallet-20260720';
+const CACHE='gn-malaysia-v3.2.0-guide-cards-20260720';
 const CORE=[
   './',
   './index.html',
@@ -18,6 +18,7 @@ const CORE=[
   './js/data.js',
   './js/components/hero.js',
   './js/components/nav.js',
+  './js/components/travel-guide.js',
   './js/pages/home.js',
   './js/pages/itinerary.js',
   './js/pages/member.js',
@@ -39,6 +40,11 @@ const CORE=[
   './images/hero-malaysia-v61.svg',
   './images/line-group-qr.jpg',
   './images/type-g-plug.jpg',
+  './images/guide-boarding.webp',
+  './images/guide-malaysia-entry.webp',
+  './images/guide-baggage-safety.webp',
+  './images/guide-sunway-mall.webp',
+  './images/guide-return-baggage.webp',
   './images/hotel-lexis-aerial.jpg',
   './images/hotel-lexis-beach.jpg',
   './images/hotel-lexis-room.jpg',
