@@ -1,5 +1,5 @@
 import {ITINERARY,SIGHTS} from '../data.js';
-import {bi,getLang} from '../i18n.js';
+import {bi,getLang,text} from '../i18n.js';
 
 function timelineText(item){
   const lang=getLang();
@@ -10,7 +10,7 @@ function timelineText(item){
 function dayGuides(day){
   const guides=SIGHTS.find(entry=>entry.day===day)?.items||[];
   if(!guides.length)return '';
-  return `<details class="deep-guide"><summary>📖 ${bi('開啟深度導覽','Mở hướng dẫn chi tiết')}</summary><div class="deep-guide-list">${guides.map(item=>`<article><span>${item.icon}</span><div><h3>${bi(item.nameZh,item.nameVi)}</h3><p>${bi(item.descZh,item.descVi)}</p></div></article>`).join('')}</div></details>`;
+  return `<details class="deep-guide"><summary>📖 ${bi('開啟深度導覽','Mở hướng dẫn chi tiết')}</summary><div class="deep-guide-list">${guides.map(item=>`<article><span>${item.icon}</span><div><h3>${bi(item.nameZh,item.nameVi)}</h3><p>${bi(item.descZh,item.descVi)}</p></div>${item.photo?`<img class="sight-photo" src="${item.photo}" alt="${text(item.photoAltZh||item.nameZh,item.photoAltVi||item.nameVi)}" loading="lazy">`:''}</article>`).join('')}</div></details>`;
 }
 
 export function itineraryPage(){

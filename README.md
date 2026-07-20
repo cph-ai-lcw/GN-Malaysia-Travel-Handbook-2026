@@ -1,4 +1,4 @@
-# 國能馬來西亞員旅手帳 2026 — v3.0 Stable
+# 國能馬來西亞員旅手帳 2026 — v3.0.2 Stable
 
 可直接部署至 GitHub Pages 的模組化靜態 PWA，無後端、無 Firebase。
 
@@ -7,6 +7,7 @@
 - Hero Banner、出發倒數與浮動快速 Icon
 - 首頁今日行程、接送、最新公告與 LINE 群組
 - Day 1–Day 5 時間軸、餐食、住宿與景點深度導覽
+- PDF 行程來源的 Lexis／Sunway 飯店與主要景點照片
 - 32 位團員姓名搜尋、去回程機位、Lexis／Sunway 分房與同房者
 - 馬來西亞氣候詳細打包清單與 Type G 插頭圖
 - Wallet 記帳、RM ↔ NTD 雙向換算與分類統計

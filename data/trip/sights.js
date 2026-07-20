@@ -7,7 +7,10 @@ export const SIGHTS = Object.freeze([
         nameZh: '大紅花海上泳池渡假村',
         nameVi: 'Khu nghỉ dưỡng Lexis Hibiscus',
         descZh: '度假村別墅沿著大紅花花瓣形狀延伸至馬六甲海峽，此次住宿 Premium Pool Villa，房內設有私人泳池。',
-        descVi: 'Các villa vươn ra eo biển Malacca theo hình cánh hoa dâm bụt. Đoàn ở Premium Pool Villa có hồ bơi riêng.'
+        descVi: 'Các villa vươn ra eo biển Malacca theo hình cánh hoa dâm bụt. Đoàn ở Premium Pool Villa có hồ bơi riêng.',
+        photo: './images/hotel-lexis-aerial.jpg',
+        photoAltZh: '大紅花海上泳池渡假村空拍',
+        photoAltVi: 'Toàn cảnh Lexis Hibiscus từ trên cao'
       }
     ]
   },
@@ -19,7 +22,10 @@ export const SIGHTS = Object.freeze([
         nameZh: '大紅花自由活動',
         nameVi: 'Tự do tại Lexis Hibiscus',
         descZh: '可安排私人泳池、海景拍照、Hibiscus Walk 與自費水陸活動；水上項目受天候與海況影響。',
-        descVi: 'Có thể bơi tại hồ riêng, chụp ảnh biển, đi Hibiscus Walk và tham gia hoạt động tự phí; hoạt động biển tùy thời tiết.'
+        descVi: 'Có thể bơi tại hồ riêng, chụp ảnh biển, đi Hibiscus Walk và tham gia hoạt động tự phí; hoạt động biển tùy thời tiết.',
+        photo: './images/hotel-lexis-beach.jpg',
+        photoAltZh: 'Lexis Hibiscus 沙灘休閒區',
+        photoAltVi: 'Khu bãi biển Lexis Hibiscus'
       }
     ]
   },
@@ -38,14 +44,20 @@ export const SIGHTS = Object.freeze([
         nameZh: '國營雙子星塔與空中連通橋',
         nameVi: 'Tháp đôi Petronas và cầu trên không',
         descZh: '吉隆坡地標性雙塔，外觀融合伊斯蘭幾何圖案與現代金屬線條，周邊可步行前往 Pavilion 商圈。',
-        descVi: 'Biểu tượng Kuala Lumpur, kết hợp hình học Hồi giáo và kiến trúc kim loại hiện đại; có lối đi bộ đến khu Pavilion.'
+        descVi: 'Biểu tượng Kuala Lumpur, kết hợp hình học Hồi giáo và kiến trúc kim loại hiện đại; có lối đi bộ đến khu Pavilion.',
+        photo: './images/sight-petronas-towers.jpg',
+        photoAltZh: '吉隆坡雙子星塔與城市景觀',
+        photoAltVi: 'Tháp đôi Petronas và cảnh quan thành phố'
       },
       {
         icon: '🌉',
         nameZh: '莎羅馬天橋 Saloma Link',
         nameVi: 'Cầu Saloma Link',
         descZh: '夜間以色彩燈光點亮的行人天橋，可遠望雙子星塔，適合夜景拍照。',
-        descVi: 'Cầu đi bộ rực sáng về đêm, nhìn thấy tháp đôi và rất thích hợp chụp ảnh.'
+        descVi: 'Cầu đi bộ rực sáng về đêm, nhìn thấy tháp đôi và rất thích hợp chụp ảnh.',
+        photo: './images/sight-saloma-link.jpg',
+        photoAltZh: '莎羅馬彩色行人天橋',
+        photoAltVi: 'Cầu đi bộ Saloma Link đầy màu sắc'
       }
     ]
   },
@@ -57,7 +69,10 @@ export const SIGHTS = Object.freeze([
         nameZh: '黑風洞與彩虹階梯',
         nameVi: 'Động Batu và cầu thang cầu vồng',
         descZh: '馬來西亞重要印度教聖地，抵達洞穴需攘爬彩虹階梯；現場猴子多，請收好食物與隨身物品。',
-        descVi: 'Thánh địa Hindu quan trọng của Malaysia. Cần leo cầu thang cầu vồng; có nhiều khỉ, hãy cất kỹ thức ăn và đồ cá nhân.'
+        descVi: 'Thánh địa Hindu quan trọng của Malaysia. Cần leo cầu thang cầu vồng; có nhiều khỉ, hãy cất kỹ thức ăn và đồ cá nhân.',
+        photo: './images/sight-batu-caves.jpg',
+        photoAltZh: '黑風洞、彩虹階梯與金色神像',
+        photoAltVi: 'Động Batu, cầu thang cầu vồng và tượng vàng'
       },
       {
         icon: '🚠',
@@ -71,7 +86,10 @@ export const SIGHTS = Object.freeze([
         nameZh: '亞羅街夜市',
         nameVi: 'Chợ đêm Jalan Alor',
         descZh: '本團唯一安排的夜市，以露天餐廳、烤雞翅、海鮮與熱帶水果聞名，請依領隊指定時間集合。',
-        descVi: 'Chợ đêm duy nhất của đoàn, nổi tiếng với quán ăn ngoài trời, cánh gà nướng, hải sản và trái cây. Tập trung đúng giờ.'
+        descVi: 'Chợ đêm duy nhất của đoàn, nổi tiếng với quán ăn ngoài trời, cánh gà nướng, hải sản và trái cây. Tập trung đúng giờ.',
+        photo: './images/sight-pavilion-jalan-alor.jpg',
+        photoAltZh: 'Pavilion 購物城與亞羅街夜市',
+        photoAltVi: 'Trung tâm Pavilion và chợ đêm Jalan Alor'
       }
     ]
   },
@@ -83,7 +101,10 @@ export const SIGHTS = Object.freeze([
         nameZh: '布城與粉紅清真寺',
         nameVi: 'Putrajaya và Thánh đường Hồng',
         descZh: '馬來西亞行政首都，城市環繞布城湖規劃；參觀清真寺請遵守現場服裝規定。',
-        descVi: 'Thủ đô hành chính Malaysia được quy hoạch quanh hồ Putrajaya. Khi vào thánh đường, hãy tuân thủ quy định trang phục.'
+        descVi: 'Thủ đô hành chính Malaysia được quy hoạch quanh hồ Putrajaya. Khi vào thánh đường, hãy tuân thủ quy định trang phục.',
+        photo: './images/sight-putrajaya-mitsui.jpg',
+        photoAltZh: '三井 Outlet、粉紅清真寺與布城景觀',
+        photoAltVi: 'Mitsui Outlet, Thánh đường Hồng và cảnh quan Putrajaya'
       },
       {
         icon: '🛒',

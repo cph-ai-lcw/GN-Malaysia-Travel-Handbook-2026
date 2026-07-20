@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.0.1-stable-20260720';
+const CACHE='gn-malaysia-v3.0.2-stable-20260720';
 const CORE=[
   './',
   './index.html',
@@ -39,6 +39,17 @@ const CORE=[
   './images/hero-malaysia-v61.svg',
   './images/line-group-qr.jpg',
   './images/type-g-plug.jpg',
+  './images/hotel-lexis-aerial.jpg',
+  './images/hotel-lexis-beach.jpg',
+  './images/hotel-lexis-room.jpg',
+  './images/hotel-sunway-exterior.jpg',
+  './images/hotel-sunway-pool.jpg',
+  './images/hotel-sunway-room.jpg',
+  './images/sight-batu-caves.jpg',
+  './images/sight-petronas-towers.jpg',
+  './images/sight-pavilion-jalan-alor.jpg',
+  './images/sight-saloma-link.jpg',
+  './images/sight-putrajaya-mitsui.jpg',
   './fonts/noto-sans-tc-400.woff2',
   './fonts/noto-sans-tc-700.woff2',
   './fonts/noto-sans-tc-900.woff2',
