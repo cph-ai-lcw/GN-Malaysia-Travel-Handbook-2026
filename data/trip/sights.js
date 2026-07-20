@@ -37,7 +37,10 @@ export const SIGHTS = Object.freeze([
         nameZh: 'Skyline Luge 天際線斜坡滑車',
         nameVi: 'Xe trượt dốc Skyline Luge',
         descZh: '以手把控制速度與剎車的斜坡滑車，本行程安排 1 次體驗，請依現場安全指示行動。',
-        descVi: 'Xe trượt điều khiển tốc độ và phanh bằng tay lái. Lịch trình gồm 1 lượt, vui lòng tuân thủ hướng dẫn an toàn.'
+        descVi: 'Xe trượt điều khiển tốc độ và phanh bằng tay lái. Lịch trình gồm 1 lượt, vui lòng tuân thủ hướng dẫn an toàn.',
+        photo: './images/sight-skyline-luge.jpg?v=3.0.6',
+        photoAltZh: 'Skyline Luge 天際線斜坡滑車入口',
+        photoAltVi: 'Lối vào Skyline Luge'
       },
       {
         icon: '🏙️',
@@ -48,6 +51,16 @@ export const SIGHTS = Object.freeze([
         photo: './images/sight-petronas-towers.jpg?v=3.0.3',
         photoAltZh: '吉隆坡雙子星塔與城市景觀',
         photoAltVi: 'Tháp đôi Petronas và cảnh quan thành phố'
+      },
+      {
+        icon: '🛍️',
+        nameZh: 'Pavilion 吉隆坡購物城',
+        nameVi: 'Trung tâm mua sắm Pavilion Kuala Lumpur',
+        descZh: '位於武吉免登商圈的大型購物中心，集合國際品牌、餐廳與美食街；自由活動時請記住集合時間與地點。',
+        descVi: 'Trung tâm mua sắm lớn tại Bukit Bintang với nhiều thương hiệu quốc tế, nhà hàng và khu ẩm thực. Hãy nhớ giờ và điểm tập trung.',
+        photo: './images/sight-pavilion.jpg?v=3.0.6',
+        photoAltZh: 'Pavilion 吉隆坡購物城正門',
+        photoAltVi: 'Lối vào Pavilion Kuala Lumpur'
       },
       {
         icon: '🌉',
@@ -76,10 +89,23 @@ export const SIGHTS = Object.freeze([
       },
       {
         icon: '🚠',
-        nameZh: '雲頂高原',
-        nameVi: 'Cao nguyên Genting',
+        nameZh: '雲頂纜車 Awana SkyWay',
+        nameVi: 'Cáp treo Awana SkyWay lên Genting',
         descZh: '搭乘纜車前往山上度假區，氣溫較吉隆坡市區低，建議隨身攜帶薄外套。',
-        descVi: 'Lên khu nghỉ dưỡng bằng cáp treo. Nhiệt độ thấp hơn trung tâm Kuala Lumpur, nên mang áo khoác mỏng.'
+        descVi: 'Lên khu nghỉ dưỡng bằng cáp treo. Nhiệt độ thấp hơn trung tâm Kuala Lumpur, nên mang áo khoác mỏng.',
+        photo: './images/sight-genting-cable-car.jpg?v=3.0.6',
+        photoAltZh: '雲頂高原 Awana SkyWay 纜車站',
+        photoAltVi: 'Ga cáp treo Awana SkyWay đi Genting'
+      },
+      {
+        icon: '☕',
+        nameZh: '源昌隆咖啡店 Kafei Dian',
+        nameVi: 'Quán cà phê Kafei Dian',
+        descZh: '由百年郵政局老建築改造的南洋咖啡店，可品嚐海南茶、咖椰吐司與半熟蛋，保留濃厚懷舊風情。',
+        descVi: 'Quán cà phê Nam Dương trong tòa bưu điện cổ, nổi tiếng với trà Hải Nam, bánh mì kaya và trứng lòng đào, mang đậm nét hoài cổ.',
+        photo: './images/sight-kafei-dian.jpg?v=3.0.6',
+        photoAltZh: '源昌隆咖啡店 Kafei Dian 外觀',
+        photoAltVi: 'Mặt tiền quán Kafei Dian'
       },
       {
         icon: '🍜',
@@ -87,9 +113,10 @@ export const SIGHTS = Object.freeze([
         nameVi: 'Chợ đêm Jalan Alor',
         descZh: '本團唯一安排的夜市，以露天餐廳、烤雞翅、海鮮與熱帶水果聞名，請依領隊指定時間集合。',
         descVi: 'Chợ đêm duy nhất của đoàn, nổi tiếng với quán ăn ngoài trời, cánh gà nướng, hải sản và trái cây. Tập trung đúng giờ.',
-        photo: './images/sight-pavilion-jalan-alor.jpg?v=3.0.3',
-        photoAltZh: 'Pavilion 購物城與亞羅街夜市',
-        photoAltVi: 'Trung tâm Pavilion và chợ đêm Jalan Alor'
+        photo: './images/sight-jalan-alor.jpg?v=3.0.7',
+        photoClass: 'sight-photo-portrait',
+        photoAltZh: '亞羅街夜市美食與用餐區',
+        photoAltVi: 'Ẩm thực và khu ăn uống tại chợ đêm Jalan Alor'
       }
     ]
   },
@@ -102,16 +129,20 @@ export const SIGHTS = Object.freeze([
         nameVi: 'Putrajaya và Thánh đường Hồng',
         descZh: '馬來西亞行政首都，城市環繞布城湖規劃；參觀清真寺請遵守現場服裝規定。',
         descVi: 'Thủ đô hành chính Malaysia được quy hoạch quanh hồ Putrajaya. Khi vào thánh đường, hãy tuân thủ quy định trang phục.',
-        photo: './images/sight-putrajaya-mitsui.jpg?v=3.0.3',
-        photoAltZh: '三井 Outlet、粉紅清真寺與布城景觀',
-        photoAltVi: 'Mitsui Outlet, Thánh đường Hồng và cảnh quan Putrajaya'
+        photo: './images/sight-putra-mosque.jpg?v=3.0.6',
+        photoClass: 'sight-photo-portrait',
+        photoAltZh: '布城粉紅清真寺外觀',
+        photoAltVi: 'Thánh đường Hồng Putra tại Putrajaya'
       },
       {
         icon: '🛒',
         nameZh: '三井 Outlet Park KLIA',
         nameVi: 'Mitsui Outlet Park KLIA',
         descZh: '返程前的自由購物站，請注意隨身行李、液體與登機時間。',
-        descVi: 'Điểm mua sắm tự do trước chuyến về; chú ý hành lý xách tay, chất lỏng và giờ lên máy bay.'
+        descVi: 'Điểm mua sắm tự do trước chuyến về; chú ý hành lý xách tay, chất lỏng và giờ lên máy bay.',
+        photo: './images/sight-mitsui-outlet.jpg?v=3.0.6',
+        photoAltZh: '三井 Outlet Park KLIA Sepang 招牌',
+        photoAltVi: 'Biển hiệu Mitsui Outlet Park KLIA Sepang'
       }
     ]
   }

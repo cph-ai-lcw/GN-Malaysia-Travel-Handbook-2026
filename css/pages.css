@@ -331,6 +331,10 @@
   object-fit: cover;
   background: var(--line);
 }
+.deep-guide-list .sight-photo-portrait {
+  max-height: 480px;
+  object-fit: contain;
+}
 .anchor-chips {
   display: flex;
   gap: 8px;

@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.0.5-stable-20260720';
+const CACHE='gn-malaysia-v3.0.7-stable-20260720';
 const CORE=[
   './',
   './index.html',
@@ -47,9 +47,14 @@ const CORE=[
   './images/hotel-sunway-room.jpg',
   './images/sight-batu-caves.jpg?v=3.0.3',
   './images/sight-petronas-towers.jpg?v=3.0.3',
-  './images/sight-pavilion-jalan-alor.jpg?v=3.0.3',
   './images/sight-saloma-link.jpg?v=3.0.3',
-  './images/sight-putrajaya-mitsui.jpg?v=3.0.3',
+  './images/sight-pavilion.jpg?v=3.0.6',
+  './images/sight-kafei-dian.jpg?v=3.0.6',
+  './images/sight-genting-cable-car.jpg?v=3.0.6',
+  './images/sight-putra-mosque.jpg?v=3.0.6',
+  './images/sight-skyline-luge.jpg?v=3.0.6',
+  './images/sight-mitsui-outlet.jpg?v=3.0.6',
+  './images/sight-jalan-alor.jpg?v=3.0.7',
   './fonts/noto-sans-tc-400.woff2',
   './fonts/noto-sans-tc-700.woff2',
   './fonts/noto-sans-tc-900.woff2',
