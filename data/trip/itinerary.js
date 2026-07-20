@@ -27,12 +27,12 @@ export const ITINERARY = Object.freeze([
   {time:'下午',zh:'天際線斜坡滑車 Skyline Luge（1 次）',vi:'Trải nghiệm Skyline Luge (1 lượt)'},
   {time:'下午',zh:'巧克力專賣店',vi:'Cửa hàng sô-cô-la'},
   {time:'下午',zh:'雙子星塔、全冷氣空橋、Pavilion',vi:'Tháp đôi, cầu đi bộ có máy lạnh, Pavilion'},
-  {time:'晚間',zh:'晚餐餐費 RM30',vi:'Phụ cấp bữa tối RM30',included:true},
+  {time:'晚間',zh:'Pavilion（巴比倫）購物中心自由逛街、晚餐自理（餐費 RM30）',vi:'Tự do mua sắm và dùng bữa tối tại Pavilion (phụ cấp RM30)',included:true},
   {time:'夜間',zh:'莎羅馬天橋 Saloma Link',vi:'Cầu Saloma Link về đêm'}
  ],meals:[
   {zh:'飯店早餐',vi:'Bữa sáng tại khách sạn'},
   {zh:'肉骨茶風味餐',vi:'Bữa trưa Bak Kut Teh'},
-  {zh:'晚餐餐費 RM30',vi:'Phụ cấp bữa tối RM30'}
+  {zh:'Pavilion 晚餐自理（餐費 RM30）',vi:'Tự túc bữa tối tại Pavilion (phụ cấp RM30)'}
  ]},
  {day:4,date:'2026-09-23',titleZh:'黑風洞・雲頂・老城・亞羅街',titleVi:'Động Batu・Genting・Phố cổ・Jalan Alor',hotel:'Sunway Velocity Hotel Kuala Lumpur',items:[
   {time:'上午',zh:'南洋土產店',vi:'Cửa hàng đặc sản Malaysia'},

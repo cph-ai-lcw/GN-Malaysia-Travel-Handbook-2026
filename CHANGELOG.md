@@ -1,5 +1,11 @@
 # Changelog
 
+## v3.1.2 Island Stable · 2026-07-20
+
+- Day 3 時間軸標註 Pavilion（巴比倫）購物中心自由逛街與晚餐自理。
+- 餐食欄同步改為「Pavilion 晚餐自理（餐費 RM30）」，保留餐費資訊。
+- Pavilion 深度導覽加入集合時間與地點提醒，並更新中越雙語及 PWA 快取。
+
 ## v3.1.1 Island Stable · 2026-07-20
 
 - Fipper 拖鞋與豆蔻膏改用專案內建 SVG 圖示，避免部分手機將 Emoji 顯示成方框或空白。

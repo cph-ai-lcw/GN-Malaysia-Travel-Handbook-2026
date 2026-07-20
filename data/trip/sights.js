@@ -56,8 +56,8 @@ export const SIGHTS = Object.freeze([
         icon: '🛍️',
         nameZh: 'Pavilion 吉隆坡購物城',
         nameVi: 'Trung tâm mua sắm Pavilion Kuala Lumpur',
-        descZh: '位於武吉免登商圈的大型購物中心，集合國際品牌、餐廳與美食街；自由活動時請記住集合時間與地點。',
-        descVi: 'Trung tâm mua sắm lớn tại Bukit Bintang với nhiều thương hiệu quốc tế, nhà hàng và khu ẩm thực. Hãy nhớ giờ và điểm tập trung.',
+        descZh: '位於武吉免登商圈的大型購物中心，Day 3 安排於此自由逛街及晚餐自理（餐費 RM30）；請記住集合時間與地點。',
+        descVi: 'Trung tâm mua sắm lớn tại Bukit Bintang. Day 3 đoàn tự do mua sắm và dùng bữa tối tại đây (phụ cấp RM30); hãy nhớ giờ và điểm tập trung.',
         photo: './images/sight-pavilion.jpg?v=3.0.6',
         photoAltZh: 'Pavilion 吉隆坡購物城正門',
         photoAltVi: 'Lối vào Pavilion Kuala Lumpur'
