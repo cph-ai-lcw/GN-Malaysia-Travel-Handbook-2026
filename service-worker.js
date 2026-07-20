@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.1.0-island-20260720';
+const CACHE='gn-malaysia-v3.1.1-icons-20260720';
 const CORE=[
   './',
   './index.html',
@@ -63,7 +63,9 @@ const CORE=[
   './icons/apple-touch-icon.png',
   './icons/icon-192.png',
   './icons/icon-512.png',
-  './icons/icon-maskable-512.png'
+  './icons/icon-maskable-512.png',
+  './icons/fipper-slipper.svg?v=3.1.1',
+  './icons/nutmeg-balm.svg?v=3.1.1'
 ];
 
 self.addEventListener('install',event=>event.waitUntil(

@@ -1,4 +1,4 @@
-# 國能馬來西亞員旅手帳 2026 — v3.1.0 Island Stable
+# 國能馬來西亞員旅手帳 2026 — v3.1.1 Island Stable
 
 可直接部署至 GitHub Pages 的模組化靜態 PWA，無後端、無 Firebase。
 

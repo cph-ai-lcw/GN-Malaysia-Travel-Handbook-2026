@@ -11,6 +11,7 @@ export const SHOPPING = Object.freeze([
   },
   {
     icon: '🩴',
+    iconImage: './icons/fipper-slipper.svg?v=3.1.1',
     nameZh: 'Fipper 拖鞋',
     nameVi: 'Dép Fipper',
     whereZh: 'Sunway Velocity Mall／Outlet',
@@ -71,7 +72,8 @@ export const SHOPPING = Object.freeze([
   },
   {
     icon: '🧴',
-    nameZh: '豆蔛膏／按摩膏',
+    iconImage: './icons/nutmeg-balm.svg?v=3.1.1',
+    nameZh: '豆蔻膏／按摩膏',
     nameVi: 'Dầu nhục đậu khấu／dầu xoa bóp',
     whereZh: '土產店',
     whereVi: 'Cửa hàng đặc sản',

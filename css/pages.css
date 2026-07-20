@@ -416,6 +416,13 @@
 }
 .guide-card > .emoji {
   font-size: 2rem;
+  line-height: 1;
+  font-family: "Apple Color Emoji", "Segoe UI Emoji", "Noto Color Emoji", sans-serif;
+}
+.guide-card > .emoji img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
 }
 .guide-card p {
   margin: 8px 0;
