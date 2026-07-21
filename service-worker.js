@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-v3.2.0-guide-cards-20260720';
+const CACHE='gn-malaysia-simple-v3.2.1-swipe-nav-20260721';
 const CORE=[
   './',
   './index.html',
