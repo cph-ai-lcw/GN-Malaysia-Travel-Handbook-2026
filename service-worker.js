@@ -1,4 +1,4 @@
-const CACHE='gn-malaysia-simple-v3.2.1-swipe-nav-20260721';
+const CACHE='gn-malaysia-simple-v3.2.2-tablet-swipe-20260721';
 const CORE=[
   './',
   './index.html',
